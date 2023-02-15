@@ -21,7 +21,7 @@
         ?>
     <main>
         <div class="big_text">
-            Hello
+            Hell
         </div>
 
         <div class="down_text" id="note">
