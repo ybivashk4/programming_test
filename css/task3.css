@@ -1,0 +1,188 @@
+div p{
+    color:blueviolet;
+    background-color: chartreuse;
+    border: 2px solid #000;
+    font-size: large;
+    border-radius: 5px;
+    padding-left: 45%;
+}
+
+div h2{
+    display: flex;
+    align-self: center;
+    color: aquamarine;
+    background-color: darkblue;
+    border: 5px dotted red;
+    padding: 0% 0% 1% 10%;
+}
+
+
+
+#test p{
+    background-color: cadetblue;
+    font-size: xx-large;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+#test h2{
+    background-color: black;
+    size: 200px;
+}
+
+.bbb{
+    background-color: aqua;
+    height: 75px;
+    font-size: 20px;
+    margin: 2% 0 2% 0;
+}
+
+
+#test .bbb{
+    background-color: cadetblue;
+    font-size: xx-large;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+p.bbb{
+    border: 9px solid blue;
+}/*Не работает - 7*/
+
+h2.bbb{
+    border: 5px dashed green;
+}
+
+#test p.bbb{
+    background-color: darkorange;
+    font-size: xx-large;
+}
+
+div p, div h2{
+    background-color:chocolate;
+}
+
+.bbb, .xxx{
+    color: blue    ;
+}
+
+p.bbb, h2.xxx{
+    color: brown;
+}
+
+#test p.bbb, #test p.xxx{
+    background-color: cornflowerblue;
+    color: darkmagenta;
+}
+
+.fff *{
+    color: black;
+    border-radius: 20px;
+}
+
+.fff p{
+    width: 10%;
+}
+
+p.fff{
+    background-color: seagreen;
+    color: darkorange;
+    border: 1em solid #fff;
+}
+
+.fff .bbb{
+    width: 10%;
+    padding-left: 2%;
+}
+
+.fff h2.bbb{
+    transform: rotate(10deg);
+}
+
+#test a:visited, #test a:link{
+    color: red;
+    text-decoration: none;
+}
+#test a:hover{
+    color: lightblue;
+    text-decoration: underline;
+}
+
+
+a.www:link, a.www:visited{
+    color: lightblue;
+    text-decoration: underline;
+}
+
+
+#test a.www:link, #test a.www:visited{
+    color: #000;
+}
+#test a.www:hover{
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+.eee a.www:visited{
+    color: blue;
+}
+.eee a.www:hover{
+    color: red;
+}
+.eee a.www:link{
+    color:chartreuse;
+}
+
+p>i{
+    color: blue;
+    border: 5px dotted blueviolet;
+}
+
+ul>li{
+    color: brown;
+    text-decoration: underline;
+}
+
+p>a, a.test{
+    background-color: lightcoral;
+    color: navy;
+    border-radius: 5px;
+}
+
+b+i{
+    color: violet;
+    background-color: navy;
+    font-size: 25px;
+}
+
+#test b+i{
+    color: navy;
+    background-color: violet;
+}
+
+ul+p{
+    background-color: tomato;
+    text-shadow: 1px 1px 2px white;
+    font-size: xx-large;
+}
+
+h1 ~ p{
+    color:black;
+    background-color: springgreen;
+    font-size: large;
+
+}
+
+#test h2 ~ p{
+    color: aqua;
+    background-color: red;
+    font-size: 5em;
+}
+
+p * i{
+    background-color: purple;
+    color: #fff;
+    text-decoration: underline;
+    border-radius: 10px;
+    margin: 0 2% 0 2%;
+}
