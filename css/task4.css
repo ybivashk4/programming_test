@@ -1,7 +1,7 @@
 .flag1{
     background-color: black;
-    height: 200px;
-    width: 350px;
+    height: 220px;
+    width: 370px;
 }
 .red{
     background-color: #CC1224;
@@ -15,11 +15,10 @@
 }
 
 .curcle{
-    margin-left: 455%;
+    margin-left: 45%;
     padding-top: 40%;
     background-color: white;
     width: 10%;
-    height: 10%;
-    border: black solid 4px;
+    border: white solid 4px;
     border-radius: 54px;
 }
