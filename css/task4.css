@@ -24,3 +24,57 @@
     background-color: white;
     border-radius: 54px;
 }
+
+
+.flag2{
+    background-color: #DC261C;
+    height: 220px;
+    width: 370px;
+}
+.blackTriangle{
+    position: absolute;
+    border: 110px solid transparent; 
+    border-left: 110px solid black; 
+
+}
+.yellowTriangle{
+    border: 110px solid transparent; 
+    border-left: 170px solid #F8C624; 
+}
+
+
+.star{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: -90px;
+    top: -10px;
+    transform: rotate(-29deg);
+}
+
+.triangle1{
+    position: absolute;
+    
+    border: 30px solid transparent;
+    border-top: 19px solid white;
+   /* transform: rotate(120deg);*/
+}
+
+.triangle2{
+    position: absolute;
+    border: 30px solid transparent;
+    top: -10px;
+    left: -13px;
+    border-top: 19px solid white;
+    transform: rotate(71deg);
+}
+
+.triangle3{
+    position: absolute;
+    
+    border: 30px solid transparent;
+    border-top: 19px solid white;
+    top: -10px;
+    left: 13px;
+    transform: rotate(-71deg);
+}
