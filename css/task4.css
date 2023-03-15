@@ -5,20 +5,22 @@
 }
 .red{
     background-color: #CC1224;
-    height: 25%;
-    width: 100%;
+    height: 55px;
+    width: 370px;
 }
 .blue{
-    width: 100%;
-    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 121px;
     background-color: #042A6C;  
 }
 
 .curcle{
-    margin-left: 45%;
-    padding-top: 40%;
+    display: flex;
+    height: 90%;
+    width: 30%;
     background-color: white;
-    width: 10%;
-    border: white solid 4px;
     border-radius: 54px;
 }
