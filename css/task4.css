@@ -1,6 +1,25 @@
-.main{
-    width: 25%;
-    height: 10%;
+.flag1{
     background-color: black;
-    
+    height: 200px;
+    width: 350px;
+}
+.red{
+    background-color: #CC1224;
+    height: 25%;
+    width: 100%;
+}
+.blue{
+    width: 100%;
+    height: 55%;
+    background-color: #042A6C;  
+}
+
+.curcle{
+    margin-left: 455%;
+    padding-top: 40%;
+    background-color: white;
+    width: 10%;
+    height: 10%;
+    border: black solid 4px;
+    border-radius: 54px;
 }
