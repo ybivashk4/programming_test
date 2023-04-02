@@ -46,5 +46,6 @@
     <?php
         include 'footer.tpl';
     ?>
+<script src="script/main.js"></script>
 </body>
 </html>
