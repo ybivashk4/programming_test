@@ -1,7 +1,6 @@
 body{
     display: flex;
     width: 100%;
-    background: #202833;
     flex-flow: row wrap;
     align-content: space-around;
 }
