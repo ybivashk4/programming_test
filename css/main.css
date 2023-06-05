@@ -58,6 +58,7 @@ main{
 }
 
 .down_text{
+    display:flex;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -66,29 +67,25 @@ main{
     color: #46A29F;
 }
 
-#note{
-    display: flex;
-    width: 713px;
-}
+
 
 .proglang{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    width: 100%;
+    margin: 2% 2% 2% 2%;
 
 }
 .python{
     display: flex;
-    width: 30%;
-    margin-left: 17%;
+    margin-left: 10%;
+    margin-right: 1%;
 }
 
 .cpp{
     display: flex;
-    width: 30%;
+    margin-right: 10%;
+    margin-left: 1%;
 }
 
 .link{
@@ -147,10 +144,7 @@ input:required:invalid{
     align-items: center;
 }
 
-[class*="col-"] {
-    width: 100%;
-    padding: 10px;
-}
+
 
 @media only screen and (min-width: 768px) {
     /* For desktop: */

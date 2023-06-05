@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>my site</title>
     <link rel="stylesheet" href="css/main.css">
     
@@ -24,7 +24,7 @@
             Hello
         </div>
 
-        <div class="down_text" id="note">
+        <div class="down_text">
             On this site you can choose a resource
              for learning programming(so far only c++
               and python)
