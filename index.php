@@ -12,15 +12,15 @@
 <body>
         <?php
             if ($_POST["inMail"] != "" || $_POST["upMail"] != "")
-                $a = '<div class="up_text">Welcome</div>';
+                $a = '<div class="up_text font-size-2">Welcome</div>';
             else
-                $a = '<div class="up_text">sign pls</div>';
+                $a = '<div class="up_text font-size-2">sign pls</div>';
                 include 'header.tpl';
             
                 
         ?>
     <main>
-        <div class="big_text">
+        <div class="big_text font-size-13">
             Hello
         </div>
 
@@ -31,12 +31,12 @@
         </div>
         <div class="proglang">
         <div class="python">
-            <img src="img/python.png" alt="">
+            <img src="img/python.png" alt="" class="width100">
             <a href="python.php" class="link">Learn python</a>
         </div>
 
         <div class="cpp">
-            <img src="img/c++.png" alt="">
+            <img src="img/c++.png" alt="" class="width100">
             <a href="c++.php" class="link">Learn C/C++</a>
         </div>
     </div>
