@@ -1,6 +1,6 @@
 <footer>
     <div class="down_text">
-        Made by Mihail Beltyukov
+        Made by Mikhail Beltyukov
     </div>
 
     <div class="down_text">

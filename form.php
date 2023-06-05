@@ -15,30 +15,27 @@
         include 'header.tpl';
     ?>
 
-    <main>
+    <main class="flex-row-nowrap">
         <div>
             <div class="up_text">
-                <a href="index.php" class="up_text">Back</a>
+                <a href="index.php" class="up_text font-size-max-3 font-size-2">Back</a>
             </div>
-            <br>
 
-        <div>
+        </div>
+
             <form method="POST" action="index.php">
-                <div class="down_text">
+                <div class="down_text flex-column-wrap">
                     <span class="up_text">Sign in</span>
                 </div>
             </form>
 
-            <br>
-
             <form method="POST" action="index.php">
-                <div class="down_text">
+                <div class="down_text flex-column-wrap">
                     <div>
                         <span class="up_text">Sign up</span>
                     </div>
                 </div>
             </form>
-        </div>
 
     </main>
 
