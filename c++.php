@@ -16,6 +16,24 @@
             }
                 include 'header.tpl';
         ?>
+
+    <main class="flex-row-nowrap">
+        <div>
+            <div class="up_text">
+                <a href="index.php" class="up_text font-size-max-3 font-size-2">Back</a>
+            </div>
+
+        </div>
+
+        <div class="up_text font-size-2 font-size-max-2">
+             c++ knowledge test
+        </div>
+
+        <form method="POST" action="#" id="form_test">
+            <input class="big_but" type="submit" value="Start test">
+        </form>
+    </main>
+
     <?php
         include 'footer.tpl';
     ?>
