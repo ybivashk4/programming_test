@@ -129,8 +129,8 @@
         .but{
             display: flex;
             flex-flow: wrap column;
-            margin-top: 1%;
-            margin-left: 20%;
+            margin-top: 7%;
+            margin-left: 5%;
             width: 100px;
             background-color: #66FCF1;
             color: #202833;
@@ -154,27 +154,42 @@
             width: 100%;
             height: 100%;
         }
+
+        .forms{
+            display: flex;
+            flex-flow: column wrap;
+            margin: 2% 2% 2% 2%;
+        }
+
+        .big_but{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: #66FCF1;
+            color: #202833;
+            border: #202833;
+            border-radius: 5px;
+            border-width: 2px;
+        }
+        #form_test{
+            display: flex;
+            flex-flow: wrap column;
+            width: 20%;
+            height: 35%;
+        }
         @media only screen and (min-width: 768px) {
             /* For desktop: */
             .font-size-13 {font-size: 13em;}
             .font-size-2 {font-size: 2em;}
+            .font-size-3 {font-size: 3em;}
         }
         
-        @media only screen and (min-width: 1200px) {
+        @media only screen and (max-width: 768px) {
             /* For desktop: */
-            .col-lg-1 {width: 8.33%;}
-            .col-lg-2 {width: 16.66%;}
-            .col-lg-3 {width: 25%;}
-            .col-lg-4 {width: 33.33%;}
-            .col-lg-5 {width: 41.66%;}
-            .col-lg-6 {width: 50%;}
-            .col-lg-7 {width: 58.33%;}
-            .col-lg-8 {width: 66.66%;}
-            .col-lg-9 {width: 75%;}
-            .col-lg-10 {width: 83.33%;}
-            .col-lg-11 {width: 91.66%;}
-            .col-lg-12 {width: 100%;}
-            .d-lg-none{
-                display: none;
-            }
+            .font-size-max-1 {font-size: 1em;}
+            .font-size-max-2 {font-size: 2em;}
+            .flex-column-wrap {flex-flow: column wrap;}
+            .flex-row-nowrap {flex-flow: row nowrap;}
+            .font-size-max-3 {font-size: 3em;}
+            .font-size-max-5 {font-size: 5em;}
         }
