@@ -32,7 +32,7 @@ session_start();
                 }else{
                     $a = '<div class="up_text font-size-2">Wrong input </div>';
                 }
-            }else if (!$_SESSION['auth']){
+            }else if (!empty($_SESSION['auth'])){
                 $a = '<div class="up_text font-size-2">sign in/up</div>'; 
             }else{
                 $a = '<div class="up_text font-size-2">Welcome </div>';
@@ -48,7 +48,7 @@ session_start();
 
         </div>
             <?php
-            if (!$_SESSION['auth']){
+            if (!empty($_SESSION['auth'])){
                 echo '<form method="POST">
                     <div class="down_text flex-column-wrap">
                         <span class="up_text">Sign in</span>
