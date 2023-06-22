@@ -1,3 +1,6 @@
+<?php
+    require ("dbconnect.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,13 +14,8 @@
 </head>
 <body>
         <?php
-            if ($_POST["inMail"] != "" || $_POST["upMail"] != "")
-                $a = '<div class="up_text font-size-2">Welcome</div>';
-            else
-                $a = '<div class="up_text font-size-2">sign pls</div>';
-                include 'header.tpl';
-            
-                
+            $a = '<div class="up_text font-size-2">Welcome</div>';
+            include 'header.tpl';
         ?>
     <main>
         <div class="big_text font-size-13">

@@ -1,3 +1,6 @@
+<?php
+    require ("dbconnect.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +14,8 @@
 </head>
 <body>
         <?php
-            if ($_GET["inMail"] != "" && $_GET["inPass"] != ""){
-                echo "<div class =\"up_text\"> Welcome, admin </div>";
-            }
-                include 'header.tpl';
+            $a = '<div class="up_text font-size-2">Welcome</div>';
+            include 'header.tpl';   
         ?>
 
     <main class="flex-row-nowrap">

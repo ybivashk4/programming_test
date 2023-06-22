@@ -49,9 +49,9 @@ function createLabel(elem, name, textLabel, typeOfInput, pattertn){
     test2.type = typeOfInput;
     test2.name = name;
     test2.required = "True";
-    if (pattertn != "no"){
-        test2.pattern = pattertn;
-    }
+    // if (pattertn != "no"){
+    //    test2.pattern = pattertn;
+   // }
     test1.innerHTML = textLabel;
     test1.appendChild(test2);
     elem.appendChild(test1);
@@ -67,7 +67,7 @@ function createButton(elem){
 
 let elem = document.querySelectorAll(".down_text")// первые 2
 
-// создание/удаление вхола
+// создание/удаление входа
 let flag1 = true;
 elem[0].childNodes[1].onclick = function(){
     if (flag1){
@@ -104,29 +104,3 @@ elem[1].childNodes[1].onclick = function(){
         flag2=true;
     }
 }
-
-// взять данные из формы
-let dataBase = new Map();
-dataBase.set("asdasd@asd", "ASDasd123");
-
-let forms = document.getElementsByTagName("form");
-forms[0].addEventListener('submit', function(event){
-    event.preventDefault();
-    const formData = new FormData(forms[0]);
-    const mail = formData.get("inMail");
-    const password = formData.get("inPass");
-    if (dataBase.get(mail) != password){
-        alert("Wrong input");
-    }else{
-        forms[0].submit();
-    }
-});
-
-forms[1].addEventListener('submit', function(event){
-    event.preventDefault();
-    const formData = new FormData(forms[1]);
-    const mail = formData.get("upMail");
-    const password = formData.get("upPass");
-    dataBase.set(mail, password);
-    forms[1].submit();
-});

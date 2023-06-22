@@ -1,3 +1,24 @@
+<?php
+    
+    require ("dbconnect.php");
+    session_start();
+    if (!empty($_POST['inMail']) and !empty($_POST['inPass'])){
+        $mail = $_POST['inMail'];
+        echo '<div class="up_text">arbuz </div>';
+        $password = $_POST['inPass'];
+        $query = " SELECT \"почта\", \"пароль\" FROM tst.\"Пользователь\" WHERE \"почта\"='$mail' and \"пароль\" = '$password' ";
+        $res = pg_query($conn, $query);
+        $user = pg_fetch_assoc($res);
+        if (!empty($user)){
+            $_SESSION['auth'] = true;
+            echo '<div class="up_text">arbuz </div>';
+        }else{
+            echo '<div class="up_text">arbuz </div>';
+        }
+    }else{
+        echo '<div class="up_text">arbuz </div>';
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +32,10 @@
 </head>
 <body>
     
-    <?php
-        include 'header.tpl';
-    ?>
+        <?php
+            $a = '<div class="up_text font-size-2">Welcome</div>';
+            include 'header.tpl';   
+        ?>
 
     <main class="flex-row-nowrap">
         <div>
@@ -41,8 +63,10 @@
 
     <?php
         include 'footer.tpl';
+        echo empty($_SESSION['auth']);
     ?>
 
     <script src="script/form.js"></script>
 </body>
 </html>
+<!-- admin@admin.admin 123-->
