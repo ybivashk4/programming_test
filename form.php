@@ -27,7 +27,7 @@ session_start();
                 
                 if (!empty($user)){
                     $_SESSION['auth'] = true;
-                    $name = $user[0];
+                    $_SESSION['name'] = $user[0];
                     $a = '<div class="up_text font-size-2">Welcome </div>';
                 }else{
                     $a = '<div class="up_text font-size-2">Wrong input </div>';

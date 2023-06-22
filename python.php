@@ -1,5 +1,6 @@
 <?php
     require ("dbconnect.php");
+    session_start();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,7 +15,11 @@
 </head>
 <body>
         <?php
-            $a = '<div class="up_text font-size-2">Welcome</div>';
+            if (empty($_SESSION['auth'])){
+                $a = '<div class="up_text font-size-2">sign-></div>';
+            }else{
+                $a = '<div class="up_text font-size-2">'.'Welcome, '.$_SESSION['name'].'</div>';
+            }
             include 'header.tpl';   
         ?>
 
