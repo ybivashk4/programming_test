@@ -17,6 +17,7 @@ session_start();
 <body>
     
         <?php
+        // вход
             if (!empty($_POST['inMail']) and !empty($_POST['inPass'])){
                 $mail = $_POST['inMail'];
                 $password = $_POST['inPass'];
@@ -37,9 +38,26 @@ session_start();
             }else{
                 $a = '<div class="up_text font-size-2">Welcome </div>';
             }
-            include 'header.tpl';   
+            
+        // регестрация
+        if (!empty($_POST['upMail']) and !empty($_POST['upPass']) and !empty($_POST['upName'])){
+            $mail = $_POST['upMail'];
+            $password = $_POST['upPass'];
+            $name = $_POST['upName'];
+            $query = "SELECT \"tst\".add_user_func('$mail', '$password', '$name')"; // добавление записи в таблицу
+            $flag = pg_query(pg_connect("host=localhost dbname=tests user=postgres password=123"), $query);
+            $flag = pg_fetch_array($flag)[0];
+            // Если успешно - вернёт 1, иначе 0 (если запись уже есть)
+            if (!$flag){ 
+                $a = '<div class="up_text font-size-2">sign in</div>';
+            }else{
+                $_SESSION['auth'] = true;
+                $_SESSION['name'] = $name;
+                $a = '<div class="up_text font-size-2">Welcome </div>';
+            }
+        }
+        include 'header.tpl'; 
         ?>
-
     <main>
         <div>
             <div class="up_text">
