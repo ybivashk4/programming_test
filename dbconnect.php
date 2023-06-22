@@ -1,22 +1,5 @@
 <?php
 
-$host = 'localhost';
 
-$port = 5433;
-
-$dbname = 'tests';
-
-$username = 'postgres';
-
-$password = '123';
-
-try {
-
-$conn = new PDO("pgsql:host=$host;port=$port;dbname=$dbname", $username, $password);
-
-} catch (PDOException $pe) {
-
-die("Could not connect to the database $dbname :" . $pe->getMessage());
-
-}
+$dbconn = pg_connect("host=localhost dbname=tests user=postgres password=123");
 ?>

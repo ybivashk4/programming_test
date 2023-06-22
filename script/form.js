@@ -49,9 +49,9 @@ function createLabel(elem, name, textLabel, typeOfInput, pattertn){
     test2.type = typeOfInput;
     test2.name = name;
     test2.required = "True";
-    // if (pattertn != "no"){
-    //    test2.pattern = pattertn;
-   // }
+    if (pattertn != "no"){
+        test2.pattern = pattertn;
+    }
     test1.innerHTML = textLabel;
     test1.appendChild(test2);
     elem.appendChild(test1);
