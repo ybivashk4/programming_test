@@ -86,4 +86,4 @@ const changeLang = function(){
     }
 }
 
-lang.onclick = changeLang;
+// lang.onclick = changeLang; не работает
