@@ -18,6 +18,8 @@
             if (empty($_SESSION['auth'])){
                 $a = '<div class="up_text font-size-2">sign-></div>';
             }else{
+                $file_name = 'img/ava/'.$_SESSION['mail'];
+                $image = $_SESSION['avatar'];
                 $a = '<div class="up_text font-size-2">'.'Welcome, '.$_SESSION['name'].'</div>';
             }
             

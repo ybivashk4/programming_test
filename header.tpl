@@ -1,6 +1,10 @@
 <header>
     <?php
-    if ($a)
+    if (isset($image)){
+        echo $image;
+    }
+
+    if (isset($a))
          echo $a; 
     ?>
     <div class="menu">

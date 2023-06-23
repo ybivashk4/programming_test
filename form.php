@@ -29,6 +29,7 @@ session_start();
                 if (!empty($user)){
                     $_SESSION['auth'] = true;
                     $_SESSION['name'] = $user[0];
+                    $_SESSION['mail'] = $mail;
                     $a = '<div class="up_text font-size-2">Welcome </div>';
                 }else{
                     $a = '<div class="up_text font-size-2">Wrong input </div>';
@@ -53,6 +54,7 @@ session_start();
             }else{
                 $_SESSION['auth'] = true;
                 $_SESSION['name'] = $name;
+                $_SESSION['mail'] = $mail;
                 $a = '<div class="up_text font-size-2">Welcome </div>';
             }
         }
@@ -87,14 +89,41 @@ session_start();
             }
             if (!empty($_POST['exit'])){
                 $_SESSION['auth'] = null;
+                $uploaddir = null;
+                $file_name = null;
+                $_SESSION['avatar'] = null;
+                $_SESSION['mail'];
                 header('Location: form.php');
             }
+            ?>
+
+            <?php
+            if (!isset($_FILES['image']['name']) and !empty($_SESSION['auth'])){
+                echo ' <form method="POST" enctype="multipart/form-data" style="margin-top:1em;">
+                <input type="file" style="color:#46A29F;margin-left:15%" name="image" accept="image/*" required>
+                <input type="submit" style="margin-left: 25%" class="but" value="set avatar"> 
+                </form>';
+            }
+            ?>
+            
+            <?php if (isset($_FILES['image']['name']) and !empty($_SESSION['auth'])){
+                $uploaddir = '/domains/prtest/img/ava/';
+                $file_name = 'img/ava/' . $_SESSION['mail'];
+                $uploadfile = $uploaddir . $_SESSION['mail'];
+                move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile);
+                $_SESSION['avatar'] = "<img src=\"$file_name\" class='height-3 width-3'  alt=\"\">";
+            } 
+            ?>
+            <?php if (!empty($_SESSION['auth'])){
+                $file_name = 'img/ava/'.$_SESSION['mail'];
+                $_SESSION['avatar'] = "<img src=\"$file_name\" class='height-3 width-3' ' alt=\"\">";
+                //echo $_SESSION['avatar'];
+            }   
             ?>
     </main>
 
     <?php
         include 'footer.tpl';
-        echo empty($_SESSION['auth']);
     ?>
 
     <script src="script/form.js"></script>
