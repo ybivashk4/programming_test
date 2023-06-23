@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.flag1{
+    background-color: black;
+    height: 220px;
+    width: 370px;
+}
+.red{
+    background-color: #CC1224;
+    height: 55px;
+    width: 370px;
+}
+.blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 370px;
+    height: 121px;
+    background-color: #042A6C;  
+}
+
+.curcle{
+    display: flex;
+    height: 90%;
+    width: 30%;
+    background-color: white;
+    border-radius: 54px;
+}
+
+
+.flag2{
+    background-color: #DC261C;
+    height: 220px;
+    width: 370px;
+}
+.blackTriangle{
+    position: absolute;
+    border: 110px solid transparent; 
+    border-left: 110px solid black; 
+
+}
+.yellowTriangle{
+    border: 110px solid transparent; 
+    border-left: 170px solid #F8C624; 
+}
+
+
+.star{
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    left: -90px;
+    top: -10px;
+    transform: rotate(-29deg);
+}
+
+.triangle1{
+    position: absolute;
+    
+    border: 30px solid transparent;
+    border-top: 19px solid white;
+   /* transform: rotate(120deg);*/
+}
+
+.triangle2{
+    position: absolute;
+    border: 30px solid transparent;
+    top: -10px;
+    left: -13px;
+    border-top: 19px solid white;
+    transform: rotate(71deg);
+}
+
+.triangle3{
+    position: absolute;
+    
+    border: 30px solid transparent;
+    border-top: 19px solid white;
+    top: -10px;
+    left: 13px;
+    transform: rotate(-71deg);
+}

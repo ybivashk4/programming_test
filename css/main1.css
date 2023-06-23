@@ -1,0 +1,201 @@
+
+        body{
+            display: flex;
+            width: 100%;
+            background: #202833;
+            flex-flow: row wrap;
+            align-content: space-around;
+        }
+        
+        .test{
+            color: #fff;
+        }
+        
+        header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            padding-bottom: 2%;
+        }
+        
+        .menu{
+            display: flex;
+            margin-left: 1%;
+        }
+        .up_text{
+            display: flex;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.7em;
+            line-height: 44px;
+            text-align: center;
+            color: #66fcf1;
+        }
+        .lang{  
+            display: flex;
+        }
+        #theme{
+            display: flex;
+            margin-right: 1%;
+        }
+        
+        
+        
+        main{ 
+            display: flex;
+            justify-content: space-between;
+            flex-flow: column wrap;
+            align-items: center;
+            width: 100%;
+            margin: 2% 2% 2% 2%;
+        }
+        
+        .big_text{
+            display: flex;
+            font-family: 'Inter';
+            font-style: italic;
+            font-weight: 700;
+            font-size: 6em;
+            text-align: center;
+            color: #66FCF1;
+        }
+        
+        .down_text{
+            display:flex;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            color: #46A29F;
+        }
+        
+        
+        
+        .proglang{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            margin: 2% 2% 2% 2%;
+        
+        }
+        .python{
+            display: flex;
+            margin-left: 10%;
+            margin-right: 1%;
+        }
+        
+        .cpp{
+            display: flex;
+            margin-right: 10%;
+            margin-left: 1%;
+        }
+        
+        .link{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        
+        
+        
+        footer{
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            left: 0px;
+            margin: 2% 2% 2% 2%;
+        }
+        
+        form{
+            display: flex;
+            flex-flow: wrap column;
+        }
+        label{
+            display: flex;
+            flex-flow: wrap column;
+            margin: 3%;
+            padding: 1%;
+        }
+        #check{
+            display: inline;
+        }
+        input:required:invalid{
+            border-color: red;
+            border-radius: 5px;
+        }
+        
+        .but{
+            display: flex;
+            flex-flow: wrap column;
+            margin-top: 7%;
+            margin-left: 5%;
+            width: 100px;
+            background-color: #66FCF1;
+            color: #202833;
+            border: #202833;
+            border-radius: 5px;
+            border-width: 2px;
+        }
+        
+        
+        .sample{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .width50{
+            width: 50%;
+            height: 50%;
+        }
+        .width100{
+            width: 100%;
+            height: 100%;
+        }
+
+        .forms{
+            display: flex;
+            flex-flow: column wrap;
+            margin: 2% 2% 2% 2%;
+        }
+
+        .big_but{
+            display: flex;
+            width: 100%;
+            height: 100%;
+            background-color: #66FCF1;
+            color: #202833;
+            border: #202833;
+            border-radius: 5px;
+            border-width: 2px;
+        }
+        #form_test{
+            display: flex;
+            flex-flow: wrap column;
+            width: 20%;
+            height: 35%;
+        }
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .font-size-13 {font-size: 13em;}
+            .font-size-2 {font-size: 2em;}
+            .font-size-3 {font-size: 3em;}
+            .height-5 {height: 5em;}
+            .height-3 {height: 5em;}
+            .width-3 {height: 5em;}
+        }
+        
+        @media only screen and (max-width: 768px) {
+            /* For desktop: */
+            .font-size-max-1 {font-size: 1em;}
+            .font-size-max-2 {font-size: 2em;}
+            .flex-column-wrap {flex-flow: column wrap;}
+            .flex-row-nowrap {flex-flow: row nowrap;}
+            .font-size-max-3 {font-size: 3em;}
+            .font-size-max-5 {font-size: 5em;}
+        }

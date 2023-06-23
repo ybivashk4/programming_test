@@ -22,7 +22,7 @@
             }else{
                 $file_name = 'img/ava/'.$_SESSION['mail'];
                 $image = $_SESSION['avatar'];
-                $a = '<div class="test">'.'Welcome, '.$_SESSION['name'].'</div>';
+                $a = '<div class="up_text font-size-2">'.'Welcome, '.$_SESSION['name'].'</div>';
             }
             include 'header.tpl';
         ?>
@@ -53,6 +53,6 @@
     <?php
         include 'footer.tpl';
     ?>
-<script src="script/main.js"></script>
+<script src="script/main1.js"></script>
 </body>
 </html>
