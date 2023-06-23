@@ -12,8 +12,12 @@ const changeTheme = function(){
         document.getElementsByClassName("down_text")[i].style.color = "#8860D0";
         }
         let img = document.getElementsByClassName("changeImage");
-        img[0].src = img[0].src.slice(0, img[0].src.indexOf("moonDark.png")) 
-        + "sunny.png";
+        
+        img[0].src = img[0].src.slice(0, img[0].src.indexOf("menuDark.png")) + "menuLight.png";
+        
+        img[1].src = img[1].src.slice(0, img[1].src.indexOf("langDark.png")) + "langLight.png";
+
+        img[2].src = img[2].src.slice(0, img[2].src.indexOf("moonDark.png")) + "sunny.png";
 
         let button = document.querySelectorAll('.but');
         for(i=0;i<button.length;i++){
@@ -31,8 +35,15 @@ const changeTheme = function(){
         document.getElementsByClassName("down_text")[i].style.color = "#46A29F";
         }
         let img = document.getElementsByClassName("changeImage");
-        img[0].src = img[0].src.slice(0, img[0].src.indexOf("sunny.png")) 
-        + "moonDark.png";
+
+
+        img[0].src = img[0].src.slice(0, img[0].src.indexOf("menuLight.png")) + "menuDark.png";
+        
+        img[1].src = img[1].src.slice(0, img[1].src.indexOf("langLight.png")) + "langDark.png";
+
+        img[2].src = img[2].src.slice(0, img[2].src.indexOf("sunny.png")) + "moonDark.png";
+
+
         let button = document.querySelectorAll('.but');
         for(i=0;i<button.length;i++){
             button[i].style.background = "#66FCF1";
