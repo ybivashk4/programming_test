@@ -183,8 +183,8 @@
             .font-size-2 {font-size: 2em;}
             .font-size-3 {font-size: 3em;}
             .height-5 {height: 5em;}
-            .height-3 {height: 3em;}
-            .width-3 {height: 3em;}
+            .height-3 {height: 5em;}
+            .width-3 {height: 5em;}
         }
         
         @media only screen and (max-width: 768px) {

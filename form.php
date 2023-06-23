@@ -111,12 +111,12 @@ session_start();
                 $file_name = 'img/ava/' . $_SESSION['mail'];
                 $uploadfile = $uploaddir . $_SESSION['mail'];
                 move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile);
-                $_SESSION['avatar'] = "<img src=\"$file_name\" class='height-3 width-3'  alt=\"\">";
+                $_SESSION['avatar'] = "<img src=\"$file_name\" style='width:2em; height:2em' alt=\"\">";
             } 
             ?>
             <?php if (!empty($_SESSION['auth'])){
                 $file_name = 'img/ava/'.$_SESSION['mail'];
-                $_SESSION['avatar'] = "<img src=\"$file_name\" class='height-3 width-3' ' alt=\"\">";
+                $_SESSION['avatar'] = "<img src=\"$file_name\" style='width:2em; height:2em' alt=\"\">";
                 //echo $_SESSION['avatar'];
             }   
             ?>
