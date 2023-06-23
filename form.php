@@ -83,7 +83,7 @@ session_start();
                     </div>
                 </form>';
             }else{
-                echo '<form method="POST"> <input class="but height-5" type="submit" value="exit" name="exit"> </form>';
+                echo '<form method="POST"> <input class="but" type="submit" value="exit" name="exit"> </form>';
                 echo '<div class="down_text"> for back to main page click "back". </div>';
                 echo '<div class="down_text"> for sign out ckick "exit". </div>';
             }
