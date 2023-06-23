@@ -115,9 +115,9 @@ session_start();
             } 
             ?>
             <?php if (!empty($_SESSION['auth'])){
+                // ставим "пустую аватарку"
                 $file_name = 'img/ava/'.$_SESSION['mail'];
                 $_SESSION['avatar'] = "<img src=\"$file_name\" style='width:2em; height:2em' alt=\"\">";
-                //echo $_SESSION['avatar'];
             }   
             ?>
     </main>
