@@ -46,44 +46,4 @@ const changeTheme = function(){
 }
 theme.onclick = changeTheme;
 
-const changeLang = function(){
-    let big, down, up;
-    let downRus = ["На этом сайте ты выберешь источник для "+
-    "изуения программирование (пока что только с++ и пайтон)",
-    "Автор: Михаил Бельтюков", "Рад вас видеть"],
 
-    upRus = ["меню", "Пытайся и делай", "РУС"],
-
-    downEn = ["On this site you can choose a resource for learning"+
-    " programming(so far only c++ and python)",
-    "Made by Mihail Beltyukov", "Thank you for use it"],
-
-    upEn = ["menu", "Try and do", "ENG"]
-
-    big = document.getElementsByClassName("big_text")
-    down = document.getElementsByClassName("down_text")
-    up = document.getElementsByClassName("up_text")
-    if (flagLang){
-        big[0].style.fontSize = "200px";
-        big[0].textContent = "Привет";
-        for (i=0;i<down.length;i++){
-            down[i].textContent = downRus[i];
-        }
-        for (i=0;i<up.length;i++){
-            up[i].textContent = upRus[i];
-        }
-        flagLang = false
-    }else{
-        big[0].textContent = "Hello";
-        big[0].style.fontSize = "256px";
-        for (i=0;i<down.length;i++){
-            down[i].textContent = downEn[i];
-        }
-        for (i=0;i<up.length;i++){
-            up[i].textContent = upEn[i];
-        }
-        flagLang = true
-    }
-}
-
-// lang.onclick = changeLang; не работает
