@@ -35,7 +35,7 @@
         </div>
 
         <div class="up_text font-size-2 font-size-max-2">
-             python knowledge test
+             py knowledge test
         </div>
 
         <form method="POST" action="#" id="form_test" style="margin-right: 2%;">
