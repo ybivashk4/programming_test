@@ -16,7 +16,7 @@
         Try and do
     </div>
 
-    <div class="lang">
+    <div class="lang" style="display:none;">
         <img src="img/langDark.png" alt="" class="changeImage">
         <span class="up_text font-size-2" id="two_up">EN</span>
     </div>

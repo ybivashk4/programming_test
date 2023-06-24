@@ -188,6 +188,7 @@
             .height-5 {height: 5em;}
             .height-3 {height: 5em;}
             .width-3 {height: 5em;}
+            
         }
         
         @media only screen and (max-width: 768px) {

@@ -84,8 +84,7 @@ session_start();
                 </form>';
             }else{
                 echo '<form method="POST"> <input class="but" type="submit" value="exit" name="exit"> </form>';
-                echo '<div class="down_text"> for back to main page click "back". </div>';
-                echo '<div class="down_text"> for sign out ckick "exit". </div>';
+                echo '<div class="down_text" style="margin:2%;"> for back to main page click "back". for sign out ckick "exit"</div>';
             }
             if (!empty($_POST['exit'])){
                 $_SESSION['auth'] = null;

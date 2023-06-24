@@ -26,7 +26,7 @@
             include 'header.tpl';   
         ?>
 
-    <main class="flex-row-nowrap">
+    <main>
         <div>
             <div class="up_text">
                 <a href="index.php" class="up_text font-size-max-3 font-size-2">Back</a>
@@ -38,7 +38,7 @@
              c++ knowledge test
         </div>
 
-        <form method="POST" action="#" id="form_test">
+        <form method="POST" action="#" id="form_test" style="margin-right: 2%;">
             <input class="big_but" type="submit" value="Start test">
         </form>
     </main>
