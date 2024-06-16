@@ -110,13 +110,13 @@ session_start();
                 $file_name = 'img/ava/' . $_SESSION['mail'];
                 $uploadfile = $uploaddir . $_SESSION['mail'];
                 move_uploaded_file($_FILES['image']['tmp_name'], $uploadfile);
-                $_SESSION['avatar'] = "<img src=\"$file_name\" style='width:2em; height:2em' alt=\"\">";
+                $_SESSION['avatar'] = "<img src=\"$file_name\" style='width:5em; height:5em' alt=\"\">";
             } 
             ?>
             <?php if (!empty($_SESSION['auth'])){
                 // ставим "пустую аватарку"
                 $file_name = 'img/ava/'.$_SESSION['mail'];
-                $_SESSION['avatar'] = "<img src=\"$file_name\" style='width:2em; height:2em' alt=\"\">";
+                $_SESSION['avatar'] = "<img src=\"$file_name\" style='width:5em; height:5em' alt=\"\">";
             }   
             ?>
     </main>

@@ -5,6 +5,8 @@
             background: #202833;
             flex-flow: row wrap;
             align-content: space-around;
+            transition: 1.9s;
+            min-height: 100vh;
         }
         
         .test{
