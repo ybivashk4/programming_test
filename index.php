@@ -1,6 +1,6 @@
 <?php
     require ("dbconnect.php");
-    session_start();
+    session_start(["use_strict_mode" => true]);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -25,27 +25,26 @@
             include 'header.tpl';
         ?>
     <main>
-        <div class="big_text font-size-13">
-            Hello
-        </div>
+    <?php
+    if (isset($_GET['page'])) {
+        switch ($_GET['page']) {
+            case 'cpp':
+                include 'c++.php';
+                break;
+            case 'python':
+                include 'python.php';
+                break;
+            case 'form':
+                include 'form.php';
+                break;
+        }
+    }
+    else {
+        include 'start_page.php'; 
+    }
 
-        <div class="down_text">
-            On this site you can choose a resource
-             for learning programming(so far only c++
-              and python)
-        </div>
-        <div class="proglang">
-        <div class="python">
-            <img src="img/python.png" alt="" class="width100">
-            <a href="python.php" class="link">Learn python</a>
-        </div>
-
-        <div class="cpp">
-            <img src="img/c++.png" alt="" class="width100">
-            <a href="c++.php" class="link">Learn C/C++</a>
-        </div>
-    </div>
     
+    ?>
     </main>
 
     <?php

@@ -59,7 +59,6 @@ session_start();
                 $a = '<div class="up_text font-size-2">Welcome </div>';
             }
         }
-        include 'header.tpl'; 
         ?>
     <main>
         <div>
@@ -126,9 +125,7 @@ session_start();
     if (isset($_COOKIE['cookie_mail'])) echo($_COOKIE['cookie_mail']); else echo("");
     echo "</p>"
     ?>
-    <?php   
-        include 'footer.tpl';
-    ?>
+
 
     <script src="script/form.js"></script>
     

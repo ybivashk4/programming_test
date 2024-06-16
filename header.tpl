@@ -9,7 +9,7 @@
     ?>
     <div class="menu">
         <img src="img/menuDark.png" alt="" class="changeImage width50">
-        <a href="form.php" class="up_text font-size-2"> form </a>
+        <a href="index.php?page=form" class="up_text font-size-2"> form </a>
     </div>
 
     <div class="up_text font-size-2" id="TaD">
