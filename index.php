@@ -37,6 +37,12 @@
             case 'form':
                 include 'form.php';
                 break;
+            case 'py_test':
+                include 'py_test.php';
+                break;
+            case 'c_test':
+                include 'c_test.php';
+                break;
         }
     }
     else {

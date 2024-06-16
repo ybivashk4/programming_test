@@ -1,18 +1,3 @@
-<?php
-    require ("dbconnect.php");
-    session_start();
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>my site</title>
-    <link rel="stylesheet" href="css/main.css">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
-    rel="stylesheet">
-</head>
 <body>
     <main>
         <div>
@@ -26,11 +11,11 @@
              c++ knowledge test
         </div>
 
-        <form method="POST" action="#" id="form_test" style="margin-right: 2%;">
+        <form method="GET" action="index.php" id="form_test" style="margin-right: 2%;">
             <input class="big_but" type="submit" value="Start test">
+            <input type="text" value="c_test" style="display: none" name='page'>
         </form>
     </main>
 
 <script src="script/tests.js"></script>
 </body>
-</html>
