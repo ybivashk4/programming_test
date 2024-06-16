@@ -60,6 +60,9 @@ function createLabel(elem, name, textLabel, typeOfInput, pattertn){
     test2.type = typeOfInput;
     test2.name = name;
     test2.required = "True";
+    if (name == "inMail")
+        test2.value = document.getElementById("kostyl").innerHTML;
+    else test2.value = "";
     if (pattertn != "no"){
         test2.pattern = pattertn;
     }

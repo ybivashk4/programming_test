@@ -34,7 +34,7 @@
 
         </div>
 
-        <div class="up_text font-size-2 font-size-max-2">
+        <div class="up_text font-size-2">
              py knowledge test
         </div>
 

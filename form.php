@@ -20,7 +20,8 @@ session_start();
         // вход
             if (!empty($_POST['inMail']) and !empty($_POST['inPass'])){
                 $mail = $_POST['inMail'];
-                $password = $_POST['inPass'];
+                $password = $_POST['inPass']; 
+                setcookie('cookie_mail', $_POST['inMail'], time() + 228 * 228);
                 $query = " SELECT \"имя\" FROM tst.\"Пользователь\" WHERE \"почта\"='$mail' and \"пароль\" = '$password'";
                 $res = pg_query(pg_connect("host=localhost dbname=tests user=postgres password=123"), $query);
                 
@@ -69,13 +70,13 @@ session_start();
         </div>
             <?php
             if (empty($_SESSION['auth'])){
-                echo '<form method="POST">
+                echo '<form method="POST" class="padding_top_1">
                     <div class="down_text flex-column-wrap">
                         <span class="up_text">Sign in</span>
                     </div>
                 </form>';
 
-                echo '<form method="POST">
+                echo '<form method="POST" class="padding_top_1">
                     <div class="down_text flex-column-wrap">
                         <div>
                             <span class="up_text">Sign up</span>
@@ -120,13 +121,18 @@ session_start();
             }   
             ?>
     </main>
-
     <?php
+    echo '<p style="display: none;" id="kostyl">';
+    if (isset($_COOKIE['cookie_mail'])) echo($_COOKIE['cookie_mail']); else echo("");
+    echo "</p>"
+    ?>
+    <?php   
         include 'footer.tpl';
     ?>
 
     <script src="script/form.js"></script>
+    
 </body>
+
 </html>
 <!-- admin@admin.admin Aasd123-->
-

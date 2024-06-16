@@ -5,6 +5,8 @@
             background: #202833;
             flex-flow: row wrap;
             align-content: space-around;
+            transition: 1.9s;
+            min-height: 100vh;
         }
         
         .test{
@@ -28,7 +30,7 @@
             font-family: 'Inter';
             font-style: normal;
             font-weight: 400;
-            font-size: 0.7em;
+            font-size: 1em;
             line-height: 44px;
             text-align: center;
             color: #66fcf1;
@@ -179,6 +181,10 @@
             flex-flow: wrap column;
             width: 20%;
             height: 35%;
+        }
+        .padding_top_1{padding-top: 1em;}
+        .input_cls{
+            background-color: transparent;
         }
         @media only screen and (min-width: 768px) {
             /* For desktop: */

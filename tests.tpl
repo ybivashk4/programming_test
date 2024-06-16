@@ -22,7 +22,7 @@
                 $image = $_SESSION['avatar'];
                 $a = '<div class="up_text font-size-2">'.'Welcome, '.$_SESSION['name'].'</div>';
             }
-            
+
             include 'header.tpl';   
         ?>
 
@@ -34,8 +34,8 @@
 
         </div>
 
-        <div class="up_text font-size-2">
-             c++ knowledge test
+        <div class="up_text font-size-2 font-size-max-2">
+             py knowledge test
         </div>
 
         <form method="POST" action="#" id="form_test" style="margin-right: 2%;">

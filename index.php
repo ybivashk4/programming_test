@@ -13,9 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
     rel="stylesheet">
 </head>
-<body>
- 
-            
+<body>           
         <?php
             if (empty($_SESSION['auth'])){
                 $a = '<div class="up_text font-size-2">sign-></div>';
